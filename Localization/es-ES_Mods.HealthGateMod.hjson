@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: Configuración del equilibrio del juego (servidor/un jugador)
+
+		requiredPercentageForProtection: {
+			Label: Umbral mínimo de protección
+			Tooltip: Cuánto de su HP máximo debe tener para estar protegido por Health Gating.
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Porcentaje Mínimo Restante
+			Tooltip: Cuánto de tu HP máximo conservarás después de recibir suficiente daño para activar Health Gating.
+		}
+
+		gatingImmunityTicks: {
+			Label: Ticks adicionales del juego de inmunidad de Health Gate
+			Tooltip: Cuántos ticks adicionales de inmunidad obtienes después de estar Health Gated. Un segundo son 60 ticks de juego.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: Daño por caída Health Gating
+			Tooltip: Si Health Gating protegerá o no al jugador cuando sufra suficiente daño por caída.
+		}
+
+		allowGatingInPvp: {
+			Label: PvP Health Gating
+			Tooltip: Si Health Gating protegerá o no al jugador de fuentes de daño PvP lo suficientemente grandes.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Configuración de preferencias (Cliente/Un jugador)
+
+		playSoundOnHealthGate: {
+			Label: Sonido del disparador de Health Gate
+			Tooltip: Si se reproduce o no un sonido del lado del cliente cuando se activa Health Gating.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Mostrar control de salud en la barra de salud
+			Tooltip:
+				'''
+				Si su barra de salud indicará o no cuánto HP le quedará después de estar Health Gated.
+				Tenga en cuenta que a partir de ahora esto no funciona 100% correctamente con otras modificaciones que agregan aumentos permanentes de HP, como Calamity.
+				'''
+		}
+	}
+}

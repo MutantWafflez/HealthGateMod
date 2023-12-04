@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: Balance-Konfiguration (Server/SinglePlayer)
+
+		requiredPercentageForProtection: {
+			Label: Mindestschutzschwelle
+			Tooltip: Wie viel Ihrer maximalen HP müssen Sie haben damit Sie durch Health Gating geschützt sind?
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Mindestverbleibender Prozentsatz
+			Tooltip: Wie viel Ihrer maximalen HP Sie behalten nachdem Sie genug Schaden erlitten haben um das Health Gating auszulösen.
+		}
+
+		gatingImmunityTicks: {
+			Label: Zusätzliche Health Gate Immunity Game Ticks
+			Tooltip: Wie viele zusätzliche Spiel-Ticks der Immunität Sie erhalten nachdem Sie „Health Gated“ erhalten haben? Eine Sekunde entspricht 60 Spielticks.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: Fallschaden-Gesundheits-Gating
+			Tooltip: Ob Health Gating den Spieler schützt wenn er ausreichend Sturzschaden erleidet.
+		}
+
+		allowGatingInPvp: {
+			Label: PVP-Gesundheits-Gating
+			Tooltip: Ob Health Gating den Spieler vor ausreichend großen PVP-Schadensquellen schützt oder nicht.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Präferenzkonfiguration (Client/SinglePlayer)
+
+		playSoundOnHealthGate: {
+			Label: Auslösegeräusch des Gesundheitstors
+			Tooltip: Ob ein clientseitiger Ton abgespielt werden soll wenn Health Gating ausgelöst wird.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Zeigen Sie Health Gating in der Gesundheitsleiste an
+			Tooltip:
+				'''
+				Ob Ihr Gesundheitsbalken anzeigt wie viel HP Ihnen nach der Gesundheitssperre noch zur Verfügung steht.
+				Beachten Sie dass dies derzeit bei anderen Mods die permanente HP-Erhöhungen hinzufügen wie z. B. Calamity nicht 100 % korrekt funktioniert.
+				'''
+		}
+	}
+}

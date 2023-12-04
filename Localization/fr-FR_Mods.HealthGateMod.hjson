@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: Configuration de l'�quilibre (serveur/singleplayer)
+
+		requiredPercentageForProtection: {
+			Label: Seuil de protection minimum
+			Tooltip: Quelle quantit� de HP maximum vous devez avoir pour que vous soyez prot�g� par Health Gating.
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Pourcentage minimum restant
+			Tooltip: Quelle part de vos HP maximum vous conserverez apr�s avoir subi suffisamment de d�g�ts pour d�clencher le Health Gating.
+		}
+
+		gatingImmunityTicks: {
+			Label: Tiques suppl�mentaires du jeu d�immunit� Health Gate
+			Tooltip: Combien de ticks de jeu suppl�mentaires d'immunit� vous obtenez apr�s avoir �t� Health Gated. Une seconde �quivaut � 60 ticks de jeu.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: D�g�ts de chute Health Gating
+			Tooltip: Que le Health Gating prot�ge ou non le joueur lorsqu'il subit suffisamment de d�g�ts de chute.
+		}
+
+		allowGatingInPvp: {
+			Label: PVP Health Gating
+			Tooltip: Que le Health Gating prot�ge ou non le joueur contre des sources de d�g�ts PVP suffisamment importantes.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Configuration des pr�f�rences (Client/SinglePlayer)
+
+		playSoundOnHealthGate: {
+			Label: Son de d�clenchement de la porte de sant�
+			Tooltip: Indique s'il faut ou non �mettre un son c�t� client lorsque le Health Gating est d�clench�.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Afficher le contr�le de sant� sur la barre de sant�
+			Tooltip:
+				'''
+				Si votre barre de sant� indiquera ou non combien de HP il vous restera apr�s avoir �t� Health Gated.
+				Notez que pour le moment cela ne fonctionne pas correctement � 100 % avec d'autres mods qui ajoutent des augmentations permanentes de HP tels que Calamity.
+				'''
+		}
+	}
+}

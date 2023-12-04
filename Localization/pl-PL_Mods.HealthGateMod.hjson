@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: Konfiguracja balansu (serwer/gra jednoosobowa)
+
+		requiredPercentageForProtection: {
+			Label: Minimalny próg ochrony
+			Tooltip: Ile maksymalnego HP musisz mieć aby być chronionym przez Bramkowanie Zdrowia.
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Minimalny pozostały procent
+			Tooltip: Ile maksymalnego HP zachowasz po otrzymaniu wystarczającej ilości obrażeń aby uruchomić Bramkę Zdrowia.
+		}
+
+		gatingImmunityTicks: {
+			Label: Dodatkowe znaczniki gry dotyczące odporności na bramkę zdrowia
+			Tooltip: Ile dodatkowych znaczników odporności otrzymasz po przejściu na bramkę zdrowia. Jedna sekunda to 60 taktów w grze.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: Bramkowanie zdrowia przy upadku
+			Tooltip: Czy Bramkowanie Zdrowia ochroni gracza gdy otrzyma wystarczającą ilość obrażeń od upadku.
+		}
+
+		allowGatingInPvp: {
+			Label: Bramkowanie zdrowia PVP
+			Tooltip: Czy Bramkowanie Zdrowia ochroni gracza przed wystarczająco dużymi źródłami obrażeń w trybie PvP.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Konfiguracja preferencji (klient/gra jednoosobowa)
+
+		playSoundOnHealthGate: {
+			Label: Dźwięk wyzwalania Bramy Zdrowia
+			Tooltip: Określa czy odtwarzać dźwięk po stronie klienta po uruchomieniu Bramki Zdrowia.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Pokaż bramkowanie zdrowia na pasku zdrowia
+			Tooltip:
+				'''
+				Niezależnie od tego czy twój pasek zdrowia będzie wskazywał ile HP pozostanie ci po przejściu przez bramkę zdrowia.
+				Należy pamiętać że obecnie nie działa to w 100% poprawnie z innymi modami które dodają stałe zwiększenie HP takimi jak Calamity.
+				'''
+		}
+	}
+}

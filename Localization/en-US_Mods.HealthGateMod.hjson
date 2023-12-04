@@ -1,0 +1,48 @@
+﻿Configs: {
+	BalanceConfig: {
+		DisplayName: Balance Config (Server/SinglePlayer)
+
+		requiredPercentageForProtection: {
+			Label: Minimum Protection Threshold
+			Tooltip: How much of your max HP you must have in order for you to be protected by Health Gating.
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Minimum Remaining Percentage
+			Tooltip: How much of your max HP you will retain after taking enough damage to trigger Health Gating.
+		}
+
+		gatingImmunityTicks: {
+			Label: Additional Health Gate Immunity Ticks
+			Tooltip: How many additional ticks of immunity you get after being Health Gated. One second is 60 ticks.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: Fall Damage Health Gating
+			Tooltip: Whether or not Health Gating will protect the player when taking enough fall damage.
+		}
+
+		allowGatingInPvp: {
+			Label: PVP Health Gating
+			Tooltip: Whether or not Health Gating will protect the player from large enough PVP damage sources.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Preference Config (Client/SinglePlayer)
+
+		playSoundOnHealthGate: {
+			Label: Health Gate Trigger Sound
+			Tooltip: Whether or not to play a client-side sound when Health Gating is triggered.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Show Health Gating On Health Bar
+			Tooltip:
+				'''
+				Whether or not your health bar will indicate how much HP you will have remaining after being Health Gated.
+				Note that as of right now this does not function 100% correctly with other mods that add permanent HP increases, such as Calamity.
+				'''
+		}
+	}
+}

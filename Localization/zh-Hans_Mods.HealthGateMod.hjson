@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: 平衡配置（服务器/单人游戏）
+
+		requiredPercentageForProtection: {
+			Label: 最低保护阈值
+			Tooltip: 您必须拥有多少最大生命值才能受到健康门控的保护。
+		}
+
+		remainingPercentageAfterGate: {
+			Label: 最低剩余百分比
+			Tooltip: 在受到足够的伤害以触发生命门控后，你将保留多少最大生命值。
+		}
+
+		gatingImmunityTicks: {
+			Label: 额外的健康门免疫游戏蜱
+			Tooltip: 被健康门控后，您会获得多少额外的免疫游戏滴答声。一秒是 60 个游戏滴答声。
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: 跌倒伤害健康门控
+			Tooltip: 当玩家遭受足够的坠落伤害时，健康门是否会保护玩家。
+		}
+
+		allowGatingInPvp: {
+			Label: PVP 健康门控
+			Tooltip: 健康门控是否会保护玩家免受足够大的 PVP 伤害源的影响。
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: 首选项配置（客户端/单人游戏）
+
+		playSoundOnHealthGate: {
+			Label: 健康门触发声音
+			Tooltip: 触发健康门控时是否播放客户端声音。
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: 在健康栏上显示健康门控
+			Tooltip:
+				'''
+				您的生命条是否会显示生命门控后您还剩下多少生命值。
+				请注意，截至目前，这对于其他添加永久 HP 增加的 mod（例如灾难）来说并不能 100% 正确运行。
+				'''
+		}
+	}
+}

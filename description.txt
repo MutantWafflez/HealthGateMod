@@ -1,0 +1,16 @@
+Adds a configurable Health Gating (also known as One Shot Protection or OSP) mechanic to Terraria.
+
+Here's how it works:
+Above or at a certain threshold of HP, damage to the player that would otherwise kill them (or come very close to it) sets their HP to a minimum pre-defined percentage of said HP.
+If the player is not above or at the minimum protection threshold, Health Gating will not be active and no protection is granted.
+
+All values can be configured, and there are more configuration options than shown here, but these two are the most important:
+* Minimum Protection Threshold (default: 50%)
+	-> This is, at minimum, what percentage of HP you must have in order to have Health Gate Protection.
+* Minimum Remaining Percentage (default: 5%)
+	-> What percentage of HP you will have after being Health Gated.
+For a balanced experience, the default configuration values are recommended.
+
+Note: Health Gating does not protect against player butchers/insta-kills forced by the game itself, vanilla or modded, for compatibility sake.
+
+Note 2: Translations are not 100% accurate.

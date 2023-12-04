@@ -1,0 +1,48 @@
+Configs: {
+	BalanceConfig: {
+		DisplayName: Configuração de saldo (servidor/singleplayer)
+
+		requiredPercentageForProtection: {
+			Label: Limite Mínimo de Proteção
+			Tooltip: Quanto do seu HP máximo você deve ter para ser protegido pelo Health Gating.
+		}
+
+		remainingPercentageAfterGate: {
+			Label: Porcentagem Mínima Restante
+			Tooltip: Quanto do seu HP máximo você reterá após sofrer dano suficiente para acionar o Health Gating.
+		}
+
+		gatingImmunityTicks: {
+			Label: Carrapatos adicionais do jogo Health Gate Immunity
+			Tooltip: Quantos ticks adicionais de imunidade você obtém após ser Health Gated. Um segundo equivale a 60 tiques do jogo.
+		}
+
+		gatingProtectsAgainstFallDamage: {
+			Label: Controle de saúde contra danos por queda
+			Tooltip: Se o Health Gating protegerá ou não o jogador ao sofrer danos de queda suficientes.
+		}
+
+		allowGatingInPvp: {
+			Label: Controle de saúde PVP
+			Tooltip: Se o Health Gating protegerá ou não o jogador de fontes de dano PVP grandes o suficiente.
+		}
+	}
+
+	PreferenceConfig: {
+		DisplayName: Configuração de preferência (cliente/singleplayer)
+
+		playSoundOnHealthGate: {
+			Label: Som de gatilho do portão de saúde
+			Tooltip: Se deve ou não reproduzir um som do lado do cliente quando o Health Gating é acionado.
+		}
+
+		showGatingPercentageOnHealthBar: {
+			Label: Mostrar controle de saúde na barra de saúde
+			Tooltip:
+				'''
+				Se sua barra de saúde indicará ou não quanto HP você terá restante após ser Health Gated.
+				Observe que no momento isso não funciona 100% corretamente com outros mods que adicionam aumentos permanentes de HP como Calamity.
+				'''
+		}
+	}
+}
